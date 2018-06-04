@@ -3,7 +3,7 @@
 <br><br><br><br><br>
 ## <span class="gold"   >UEFI & EDK II Training</span>
 
-#### How to Write a UEFI Driver
+#### UEFI Driver Wizard Lab
 
 <br>
 <span style="font-size:0.75em" ><a href='http://www.tianocore.org'>tianocore.org</a></span>
@@ -378,7 +378,7 @@ Same as slide
 
 
 
----?image=/assets/images/slides/Slide27.JPG
+---?image=/assets/images/slides/Slide28.JPG
 @title[Lab 1: UEFI Driver Created]
 <br>
 <p align="left"><span class="gold" >Lab 1: UEFI Driver Created</span></p>
