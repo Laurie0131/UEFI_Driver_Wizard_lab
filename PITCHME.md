@@ -1,6 +1,10 @@
 ---?image=assets/images/gitpitch-audience.jpg
 @title[UEFI_Driver_Wizard_Lab]
-<br><br><br><br><br>
+<br><br><br>
+<span style="font-size:0.75em" >This slide deck has moved to:  
+https://gitpitch.com/tianocore-training/UEFI_Driver_Wizard_Lab/master#/
+</span>
+<br><br>
 ## <span class="gold"   >UEFI & EDK II Training</span>
 
 #### UEFI Driver Wizard Lab
@@ -100,9 +104,20 @@ Same as slide
 
 ---?image=/assets/images/slides/Slide7.JPG
 @title[Requirements for Your Driver ]
+<p align="center"><span class="gold" ><b>Requirements for Your Driver </b></span></p>
+@snap[north-west span-80 ]
 <br>
-<p align="center"><span class="gold" >Requirements for Your Driver </span></p>
-<span style="font-size:0.9em" >Using UEFI Driver Wizard</span>
+<br>
+@box[bg-grey-25 text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" > <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>&nbsp;</span></p>)
+<br>
+@snapend
+
+
+@snap[north-west span-80 ]
+<br>
+<br>
+<br>
+<span style="font-size:0.9em" >&nbsp;&nbsp;&nbsp;Using UEFI Driver Wizard</span>
 <ul>
    <li><span style="font-size:0.7em" >UEFI Device Driver </span></li>
    <li><span style="font-size:0.7em" >UEFI Version 2.7 (0x00020046) </span><br><span style="font-size:0.6em" >`#define EFI_2_70_SYSTEM_TABLE_REVISION ((2<<16) | (70DEC))` </span></li>
@@ -112,14 +127,67 @@ Same as slide
    <li><span style="font-size:0.7em" >Test console device </span></li>
    <li><span style="font-size:0.7em" >Option to produce strings & forms for setup  </span></li>
 </ul>
+@snapend
 
 Note:
 
 
----?image=/assets/images/slides/Slide9.JPG
-<!-- .slide: data-transition="none" -->
+
+---
 @title[Template File Contents]
-<p align="right"><span class="gold" >Template File Contents </span></p>
+<p align="right"><span class="gold" ><b>Template File Contents </b></span></p>
+
+@snap[north-west span-60 fragment]
+<br>
+<br>
+<br>
+@box[bg-gold2 text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" > Proper UEFI driver entry point <br>&nbsp;</span></p>)
+<br>
+@snapend
+
+
+@snap[north-east span-65 fragment]
+<br>
+<br>
+<br>
+<p style="line-height:50%" ><br><br>&nbsp;</p>
+@box[bg-royal text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" >Basic driver libraries/headers<br>&nbsp;</span></p>)
+<br>
+@snapend
+
+
+@snap[north-west span-70 fragment]
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p style="line-height:50%" ><br>&nbsp;<br>&nbsp;</p>
+@box[bg-purple-pp text-white rounded my-box-pad2  ](<p style="line-height:70%" ><span style="font-size:0.9em; font-weight: bold;" > Skeletons for common driver functions<br>&nbsp;</span></p>)
+<br>
+@snapend
+
+
+
+@snap[north-east span-90 fragment]
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p style="line-height:50%" ><br>&nbsp;<br>&nbsp;</p>
+@box[bg-navy text-white rounded my-box-pad2  ](<p style="line-height:80%" ><span style="font-size:0.9em; font-weight: bold;" >Error values until ported EFI_UNSUPPORTED, EFI_DEVICE_ERROR<br>&nbsp;</span></p>)
+<br>
+@snapend
+
+
+
+
 
 Note:
 - Establishes a proper UEFI Driver Entry Point
@@ -129,51 +197,6 @@ Note:
 - Includes comments based on information from the Driver Writer’s Guide for UEFI 2.3.1
 - Functions may return error values until ported : (EFI_UNSUPPORTED, EFI_DEVICE_ERROR)
 
-
-
-+++?image=/assets/images/slides/Slide10.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[Template File Contents 02]
-<p align="right"><span class="gold" >Template File Contents </span></p>
-
-Note:
-- Establishes a proper UEFI Driver Entry Point
-- References to basic driver libraries/headers based on Driver Wizard form input
-- Inserted in .INF, .H and .C files
-- Skeletons for common driver functions
-- Includes comments based on information from the Driver Writer’s Guide for UEFI 2.3.1
-- Functions may return error values until ported : (EFI_UNSUPPORTED, EFI_DEVICE_ERROR)
-
-
-+++?image=/assets/images/slides/Slide11.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[Template File Contents 03]
-<p align="right"><span class="gold" >Template File Contents </span></p>
-
-Note:
-- Establishes a proper UEFI Driver Entry Point
-- References to basic driver libraries/headers based on Driver Wizard form input
-- Inserted in .INF, .H and .C files
-- Skeletons for common driver functions
-- Includes comments based on information from the Driver Writer’s Guide for UEFI 2.3.1
-- Functions may return error values until ported : (EFI_UNSUPPORTED, EFI_DEVICE_ERROR)
-
-
-+++?image=/assets/images/slides/Slide12.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[Template File Contents 04]
-<p align="right"><span class="gold" >Template File Contents </span></p>
-
-Note:
-- Establishes a proper UEFI Driver Entry Point
-- References to basic driver libraries/headers based on Driver Wizard form input
-- Inserted in .INF, .H and .C files
-- Skeletons for common driver functions
-- Includes comments based on information from the Driver Writer’s Guide for UEFI 2.3.1
-- Functions may return error values until ported : (EFI_UNSUPPORTED, EFI_DEVICE_ERROR)
 
 
 ---?image=/assets/images/slides/Slide_LabSec.JPG
@@ -199,7 +222,7 @@ Note:
 <br>
 <p align="right"><span class="gold" >Lab 1: Install UEFI Driver Wizard, Python & wxPython</span></p>
 <ol>
-   <li><span style="font-size:0.8em" >Perform <a href="https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/">Lab Setup</a> from previous Labs  </span></li>
+   <li><span style="font-size:0.8em" >Perform <a href="https://gitpitch.com/tianocore-training/Platform_Build_LAB/master#/">Lab Setup</a> from previous Labs  </span></li>
    <li><span style="font-size:0.8em" >From the `~FW/DriverWizard` folder, copy and paste folder “`~FW/DriverWizard/UefiDriverWizard`” to `~$Home`  </span></li>
    <li><span style="font-size:0.8em" >Check  if version 2.7.x is the default of Python from Terminal Prompt </span></li>
    <ul style="list-style-type:none">
